@@ -2,8 +2,8 @@ class Show < ActiveRecord::Base
   has_many :characters
   has_many :actors, through: :characters
 
-  def build_network(name:nil)
-    self.network = Network.create(name:nil)
+  def build_network(call_letters:nil)
+    self.network = Network.create(call_letters:nil)
 
   end
 end
